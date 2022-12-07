@@ -1,0 +1,105 @@
+
+@import url(http://fonts.googleapis.com/css?family=Pacifico);
+@import url(http://fonts.googleapis.com/css?family=Belleza);
+body{
+    font-family: 'Belleza', sans-serif;
+    color:#ffffff;
+    font-size:1.2em;
+    width:90%;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background-image: url(..//images/8.jpg);
+    background-size: cover;
+    }
+ h1, h2, h3{
+    font-family: 'Pacifico', sans-serif;
+    color:#006699;
+    text-transform:capitalize;
+    }
+h1{
+    text-transform: uppercase;
+    letter-spacing: 2pt;
+    border: 1px outset #006699;
+    text-align: center;
+    color: #0099cc;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px #003366;
+    }
+ h2::first-letter {
+    font-weight: bolder;
+    font-size: 180%;
+    }
+p{
+    text-align:justify;
+    }
+ #titre_principal{
+    display: block;
+  
+    margin-left:20px;
+    }
+#recherche{
+    text-align: center;
+    }
+table{
+    border-collapse: collapse; /* Les bordures du tableau seront collées */
+    width:70%;
+    }
+caption{
+    caption-side:bottom;                                    
+    }
+nav, footer{
+    text-align:center;
+    border-bottom: solid 1px #002D40;
+    margin:50px
+    }
+td,th{
+    border: 1px solid #9BBCDD;
+    }
+nav ul{
+    list-style-type: none;
+    }
+nav ul li{
+    display: inline-block;
+    }
+a:link{
+    color: #f0f0f0;
+    text-decoration:none;
+    margin-right:40px;
+    }
+a:visited{
+    color: #ffffff;
+    }
+a:hover, a:active{
+font-size:larger;
+text-decoration:underline ;
+color:#0099cc;
+    }
+button{
+    padding-left: 5px;
+    height: 30px;
+    background-color:#002D40;
+    color:white;
+    border:inset 2px grey;
+    border-radius: 5px;
+    }
+.coteAcote{
+    display: inline-block;
+    vertical-align:top;
+    margin-left:40px;
+    margin-right:20px;
+    }
+@media screen and (max-width:767px)
+{
+nav ul li {
+display: block;
+text-align:left;
+}
+h1,h2,h3{
+font-size: 12px;
+border:none;
+}
+}
+#html{
+    color: #002D40;
+}

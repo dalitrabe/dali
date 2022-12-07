@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+<head>
+<meta charset="utf-8"/>
+<title>Bibliothèque de l'IsgI</title>
+<meta name="description" content="Site de la bibliothèque de l'Institut Supérieure
+de Gestion  Industrielle  de Sfax"/>
+<link rel="stylesheet" href="../CSS/style.css" />
+<script src="..//JS/verif.js"></script>
+</head>
+<body>
+<header>
+<h1 id="titre_principal">Bibliothèque de l'IsgI- Liste des livres</h1>
+</header>
+<nav>
+<ul>
+<li> <a href="index.html">Accueil</a> </li>
+<li> <a href="livres.html">Liste des livres</a> </li>
+<li> <a href="recherche.html">Recherche</a> </li>
+<li> <a href="evaluation.html">Evaluation</a> </li>
+<li> <a href="contact.html">Contact</a> </li>
+<li><a href="..//MultiplicationGame/index.html">Jeux</a></li>
+</ul>
+<form name="Recherche" method="post" action="recherche.php">
+<input type="search" name="recherche" placeholder="Recherche">
+<button type="submit" name="envoi">Chercher</button>
+</form>
+</nav>
+<section>
+<h2>Inscription/Connexion</h2>
+<article class="coteAcote">
+<h3 id="inscrit">Déjà Inscrit</h3>
+<form name="connexion" method="post" action="login_check.php">
+<fieldset>
+<div>
+<label for="username">Adresse e-mail&nbsp;:</label>
+<input id="username" type="text" maxlength="50" size="40" name="username"  />
+</div>
+<div>
+<label for="password">Mot de passe&nbsp;:</label>
+<input id="password" type="password" maxlength="30" size="30" name="password">
+</div>
+<div><a href="motdepasse.php">&gt;&nbsp;Mot de passe oublié&nbsp;?</a></div>
+<div>
+<button type="submit" name="submit" onclick="verif()">Se connecter</button>
+<button type="reset" name="reset">Annuler</button>
+</div>
+</fieldset>
+</form>
+</article>
+<article class="coteAcote">
+<h3 id="nouveau">Nouveau Client</h3>
+<form name="creation" method="post" action="creation.php">
+<fieldset>
+<div>
+<label for="Civilite">Civilité</label>
+<select id="Civilite" name="Civilite">
+<option value="0">M.</option>
+<option value="1">Mme</option>
+<option value="2">Mlle</option>
+</select>
+</div>
+<div>
+<label for="Nom">Nom *</label>
+<input type="text" id="Nom" name="Nom"  maxlength="50" />
+</div>
+<div>
+<label for="Prenom">Prénom *</label>
+<input type="text" id="Prenom" name="Prenom"  maxlength="50"/>
+</div>
+<div>
+<label for="email">Email *</label>
+<input type="email" id="email" name="email"/>
+</div>
+<div>
+<label for="password_first">Mot de passe *</label>
+<input type="password" id="password_first" name="password_first"/>
+</div>
+<div>
+<label for="password_second">Confirmation du mot de passe *</label>
+<input type="password" id="password_second" name="password_second"/>
+</div>
+<div>
+<label for="url">Url de votre site Web</label>
+<input type="url" id="url" name="url" placeholder="http://validator.w3.org/"
+/>
+
+</div>
+
+<div>
+<label for="Tel">Tel</label>
+<input type="tel" id="Tel" name="Tel" placeholder="Num de tel avec 8
+chiffres"  maxlength="8" />
+</div>
+<div>
+<label for="date">Date de naissance</label>
+<input type="date" name="date" id="date" min="1990-01-01" max="2000-
+01-01" value="1992-01-01" />
+</div>
+<div>
+<input type="checkbox" id="NewsletterISGIInscrit"
+name="NewsletterISGIInscrit" value="1" />
+<label for="NewsletterISGIInscrit">Je m&#039;abonne aux newsletters de
+l'IsgI</label>
+</div>
+<div>
+<input type="checkbox" id="NewsletterBiblioISGIInscrit"
+name="NewsletterBiblioISGIInscrit" value="1" />
+<label for="NewsletterBiblioISGIInscrit">Je m&#039;abonne aux newsletters
+de la bibliothèque l'IsgI</label>
+</div>
+<div>
+<button type="submit" name="submit" onclick="verif1()">Créer mon compte</button>
+<button type="reset" name="reset">Annuler</button>
+</div>
+<div>
+<span id="champsObligatoires">*&nbsp;Champs obligatoires</span>
+</div>
+</fieldset>
+</form>
+</article>
+</section>
+<footer>
+<div>IsgI &copy; 2018-2019 </div>
+</footer>
+</body>
+</html>

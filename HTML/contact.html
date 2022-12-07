@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+<head>
+<meta charset="utf-8"/>
+<title>Bibliothèque de l'IsgI- Contact</title>
+<meta name="description" content="Site de la bibliothèque de l'Institut Supérieure
+de Gestion  Industrielle  de Sfax"/>
+<link rel="stylesheet" href="../CSS/style.css" />
+</head>
+<body>
+<header>
+<h1 id="titre_principal">Bibliothèque de l'IsgI</h1>
+</header>
+<nav>
+<ul>
+<li> <a href="index.html">Accueil</a> </li>
+<li> <a href="livres.html">Liste des livres</a> </li>
+<li> <a href="recherche.html">Recherche</a> </li>
+<li> <a href="evaluation.html">Evaluation</a> </li>
+<li> <a href="contact.html">Contact</a> </li>
+<li><a href="..//MultiplicationGame/index.html">Jeux</a></li>
+</ul>
+<form name="Recherche" method="post" action="recherche.php">
+<input type="search" name="recherche" placeholder="Recherche">
+<button type="submit" name="envoi">Chercher</button>
+</form>
+</nav>
+
+<section>
+<h2>Contact avec inscrits</h2>
+<article>
+<h3>Contact</h3>
+<p><a href="inscription.html#inscrit">Si vous êtes déjà inscrit, cliquez ici</a></p>
+<p><a href="inscription.html#nouveau">Si vous êtes nouveau, cliquez ici</a></p>
+<form name= "Contact" action= "contact.php" method = "post">
+<fieldset>
+<legend>Forumaire de contact</legend>
+<div>
+<input type="radio" value="infos" name="TypeMessage" id="Informations"
+/>
+<label for="Informations">Informations</label>
+<input type="radio" value="aide" name="TypeMessage" id="Aide" />
+<label for="Aide">Aide</label>
+<input type="radio" value="Suggestion" name="TypeMessage"
+id="Suggestion" checked />
+<label for="Suggestion">Suggestion</label>
+<input type="radio" value="merci" name="TypeMessage"
+id="Remerciements" />
+<label for="Remerciements">Remerciements</label>
+</div>
+<div>
+<label for="Commentaires">Commentaires :</label><br/>
+<textarea name="Commentaires" rows="3" cols="50"
+id="Commentaires"></textarea>
+</div>
+<div>
+<input type="checkbox" value="ContactRequested"
+name="DemandeDeContact" id="contact" checked />
+<label for="contact">Veuillez me contacter dès que possible, c'est
+urgent...</label>
+</div>
+<div>
+<button type="button" name="submit">Envoyer</button>
+<button type="reset" name="reset">Effacer</button>
+</div>
+</fieldset>
+</form>
+</article>
+</section>
+<footer>
+
+<div>IsgI &copy; 2018-2019 </div>
+
+</footer>
+</body>
+</html>

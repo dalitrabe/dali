@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+<head>
+<meta charset="utf-8"/>
+<title>Bibliothèque de l'IsgI-Evaluation</title>
+<meta name="description" content="Site de la bibliothèque de l'Institut Supérieure
+de Gestion  Industrielle  de Sfax" />
+<link rel="stylesheet" href="../CSS/style.css" />
+</head>
+<body>
+<header>
+<h1 id="titre_principal">Bibliothèque de l'IsgI</h1>
+</header>
+<nav>
+<ul>
+<li> <a href="index.html">Accueil</a> </li>
+<li> <a href="livres.html">Liste des livres</a> </li>
+<li> <a href="recherche.html">Recherche</a> </li>
+<li> <a href="evaluation.html">Evaluation</a> </li>
+<li> <a href="contact.html">Contact</a> </li>
+<li><a href="..//MultiplicationGame/index.html">Jeux</a></li>
+</ul>
+<form name="Recherche" method="post" action="recherche.php">
+<input type="search" name="recherche" placeholder="Recherche">
+<button type="submit" name="envoi">Chercher</button>
+</form>
+</nav>
+
+<section>
+<h2>Evaluation des livres</h2>
+<article>
+<h3>Formulaire d'évaluation des livres</h3>
+<div><a href="inscription.html#inscrit">Si vous êtes déjà inscrit, cliquez
+ici</a></div>
+<div><a href="inscription.html#nouveau">Si vous êtes nouveau, cliquez
+ici</a></div>
+<form name="evaluation" method="post" action="evaluation.php">
+<fieldset>
+<legend>Evaluation</legend>
+<div>
+<label for="livre">Choisir un livre</label>
+<select id="livre" name="livre">
+<option value="HTML5 et CSS3">HTML5 et CSS3</option>
+<option value="HTML">HTML</option>
+<option value="Réussir son référencement web 2015">Réussir son
+référencement web 2015</option>
+</select>
+</div>
+<div>
+<label for="expertise">Votre niveau d'expertise dans le domaine de ce livre (0 à
+5)</label>
+<input type="number" name="expertise" id="expertise" min="0" max="5"
+value="0" step="1" />
+</div>
+
+<div>
+
+<button type="submit" name="submit">Enregistrer mon
+
+évaluation</button>
+<button type="reset" name="reset">Annuler</button>
+</div>
+</fieldset>
+</form>
+</article>
+</section>
+<footer>
+
+<div>IsgI &copy; 2018-2019 </div>
+</footer>
+</body>
+</html>

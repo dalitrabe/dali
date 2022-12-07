@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html lang="fr">
+<head>
+<meta charset="utf-8"/>
+<title>Bibliothèque de l'IsgI- Recherche de livres</title>
+<meta name="description" content="Site de la bibliothèque de l'Institut Supérieure
+de Gestion  Industrielle  de Sfax" />
+<link rel="stylesheet" href="../CSS/style.css" />
+</head>
+<body>
+<header>
+<h1 id="titre_principal">Bibliothèque de l'IsgI</h1>
+</header>
+<nav>
+<ul>
+<li> <a href="index.html">Accueil</a> </li>
+<li> <a href="livres.html">Liste des livres</a> </li>
+<li> <a href="recherche.html">Recherche</a> </li>
+<li> <a href="evaluation.html">Evaluation</a> </li>
+<li> <a href="contact.html">Contact</a> </li>
+<li><a href="..//MultiplicationGame/index.html">Jeux</a></li>
+</ul>
+<form name="Recherche" method="post" action="recherche.php">
+<input type="search" name="recherche" placeholder="Recherche">
+<button type="submit" name="envoi">Chercher</button>
+</form>
+</nav>
+<section>
+<h2>Recherche de livres dans la bibliothèque </h2>
+<article>
+<h3>Choix des critères de recherche </h3>
+<form name="Recherche" method="post" action="recherche.php">
+<div>
+<label for="titre">Titre du livre</label>
+<input type="text" name="titre" id="titre" placeholder="Titre du livre"/>
+</div>
+<div>
+<label for="categorie">Catégorie du livre</label>
+<select name="categorie" id="categorie">
+<option value="Programmation Web">Programmation Web</option>
+<option value="Référencement Web">Référencement Web</option>
+<option value="e-commerce">Commerce Electronique</option>
+<option value="Marketing">Marketing</option>
+<option value="Autre">(Autre)</option>
+</select>
+</div>
+<div>
+<button type="submit" name="envoi">Chercher livres</button>
+<button type="reset" name="reset">Annuler</button>
+</div>
+</form>
+</article>
+</section>
+<footer>
+<div>IsgI &copy; 2018-2019 </div>
+</footer>
+</body>
+</html>
